@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
+import { Navbar, NavItem } from 'react-materialize';
+
 
 class Navigation extends Component {
   render(){
     return (
-      <nav>
-        <ul>
-          <li>About</li>
-          <li>Services Offered</li>
-          <li>Client Login</li>
-        </ul>
-      </nav>
+      <div>
+        <Navbar fixed>
+          <NavItem>About</NavItem>
+          <NavItem>Services Offered</NavItem>
+          <NavItem>Client Login</NavItem>
+        </Navbar>
+      </div>
     )
   }
 }

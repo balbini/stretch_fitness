@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Nutrition extends Component {
   render(){
     return (
-      <div>
+      <div className="edge nutrition left-align">
         <h4>Nutrition</h4>
         <ul>
           <li>Adults</li>
