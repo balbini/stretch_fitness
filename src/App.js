@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Navigation from './components/Navbar/Navbar';
+import Services from './components/Services/Services';
 import Nutrition from './components/Nutrition/Nutrition';
 import Articles from './components/Articles/Articles';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Navigation />
-        <h1>Welcome to Stretch Fitness & Nutrition</h1>
-        <p>Work alongside us to gain a better understanding of how to take care of your body through exercise and nutrition</p>
-        <Nutrition /><Articles />
-      </div>
+      <Router>
+        <div className="App">
+          <Navigation />
+        </div>
+      </Router>
     );
   }
 }
